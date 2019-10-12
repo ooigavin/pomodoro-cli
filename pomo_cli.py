@@ -13,8 +13,8 @@ parser.add_argument('-l', metavar='limit', type=int, help='Limit to pomodoros')
 args = parser.parse_args()
 
 pomo_done = 0
-rest_time = args.rest
-work_time = args.work
+rest_time = args.rest * 60
+work_time = args.work * 60
 limit = args.l if args.l else 1000
 
 def times_up(msg, sound):
