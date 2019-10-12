@@ -22,7 +22,7 @@ def times_up(msg, sound):
   sys.stdout.write("\033[K")
   sys.stdout.write(msg)
   sys.stdout.flush()
-  subprocess.call(f"mpg123 -q /home/gavin/MRobot/Sounds/{sound}.mp3", shell=True)
+  subprocess.call(f"mpg123 -q /path/to/some/Sounds/{sound}.mp3", shell=True)
 
 
 def do_pomo(pomo_done, work_time, rest_time):
